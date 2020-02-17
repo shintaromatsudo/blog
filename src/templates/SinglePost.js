@@ -37,13 +37,13 @@ export const SinglePostTemplate = ({
                 {date}
               </time>
             )}
-            {date && (
+            {modifydate && (
               <time
                 className="SinglePost--Meta--Date"
                 itemProp="dateUpdated modidate dateModified"
-                date={date}
+                date={modifydate}
               >
-                {date}
+                {modifydate}
               </time>
             )}
             {categories && (
@@ -133,7 +133,6 @@ export const pageQuery = graphql`
         template
         subtitle
         date(formatString: "YYYY/MM/DD")
-        modifydate(formatString: "YYYY/MM/DD")
         categories {
           category
         }
