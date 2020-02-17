@@ -6,8 +6,10 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type MarkdownRemarkFrontmatter implements Node {
-      modifydate: Date @dateformat(formatString: "YYYY/MM/DD")
+    type MarkdownRemark implements Node {
+      frontmatter {
+        modifydate: Date @dateformat(formatString: "YYYY/MM/DD")
+      }
     }
   `
   createTypes(typeDefs)
