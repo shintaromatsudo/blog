@@ -2,8 +2,8 @@ import React from 'react'
 import CMS from 'netlify-cms-app'
 import './cms-utils'
 
-import { HomePageTemplate } from '../templates/HomePage'
-import { ComponentsPageTemplate } from '../templates/ComponentsPage'
+// import { HomePageTemplate } from '../templates/HomePage'
+// import { ComponentsPageTemplate } from '../templates/ComponentsPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
 import { DefaultPageTemplate } from '../templates/DefaultPage'
 import { BlogIndexTemplate } from '../templates/BlogIndex'
@@ -20,12 +20,12 @@ if (
   CMS.registerPreviewStyle('/styles.css')
 }
 
-CMS.registerPreviewTemplate('home-page', ({ entry }) => (
-  <HomePageTemplate {...entry.toJS().data} />
-))
-CMS.registerPreviewTemplate('components-page', ({ entry }) => (
-  <ComponentsPageTemplate {...entry.toJS().data} />
-))
+// CMS.registerPreviewTemplate('home-page', ({ entry }) => (
+//   <HomePageTemplate {...entry.toJS().data} />
+// ))
+// CMS.registerPreviewTemplate('components-page', ({ entry }) => (
+//   <ComponentsPageTemplate {...entry.toJS().data} />
+// ))
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
 ))
