@@ -1,5 +1,0 @@
----
-template: BlogIndex
-title: a
----
-
