@@ -48,16 +48,20 @@ export class Navigation extends Component {
           <Link to="/">
             <Logo />
           </Link>
-          <div className="Nav--Links">
-            {subNav.posts.map((link, index) => (
-              <NavLink
-                to={link.slug}
-                key={'posts-subnav-link-' + index}
-              >
-                {link.title}
-              </NavLink>
-            ))}
-            <NavLink to="/contact/">Contact</NavLink>
+          <div className="Nav--Space">
+            <div className="Nav--Links">
+              {subNav.posts.map((link, index) => (
+                <NavLink
+                  to={link.slug}
+                  key={'posts-subnav-link-' + index}
+                >
+                  {link.title}
+                </NavLink>
+              ))}
+            </div>
+            <div className="Nav--Links">
+              <NavLink to="/contact/">Contact</NavLink>
+            </div>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

@@ -29,6 +29,12 @@
   height: 6rem;
 }
 
+.Nav--Space {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .Nav--Links {
   display: flex;
   align-items: center;
