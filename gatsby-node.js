@@ -78,7 +78,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       slug = `/${node.frontmatter.slug.toLowerCase()}/`
     } else if (
       // home page gets root slug
-      parsedFilePath.name === 'home' &&
+      parsedFilePath.name === 'blog' &&
       parsedFilePath.dir === 'pages'
     ) {
       slug = `/`
