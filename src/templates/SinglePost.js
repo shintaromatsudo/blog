@@ -10,6 +10,7 @@ import './SinglePost.css'
 export const SinglePostTemplate = ({
   title,
   date,
+  modifydate,
   body,
   nextPostURL,
   prevPostURL,
@@ -31,6 +32,15 @@ export const SinglePostTemplate = ({
               <time
                 className="SinglePost--Meta--Date"
                 itemProp="dateCreated pubdate datePublished"
+                date={date}
+              >
+                {date}
+              </time>
+            )}
+            {date && (
+              <time
+                className="SinglePost--Meta--Date"
+                itemProp="dateUpdated modidate dateModified"
                 date={date}
               >
                 {date}
@@ -122,7 +132,8 @@ export const pageQuery = graphql`
         title
         template
         subtitle
-        date(formatString: "MMMM Do, YYYY")
+        date(formatString: "YYYY/MM/DD")
+        modifydate(formatString: "YYYY/MM/DD")
         categories {
           category
         }

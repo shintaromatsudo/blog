@@ -3,6 +3,16 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter implements Node {
+      modifydate: Date @dateformat(formatString: "YYYY/MM/DD")
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 

@@ -295,6 +295,7 @@ collections: # A list of collections the CMS should be able to edit
         options: ['Published', 'Featured', 'Draft']
         default: 'Published'
       - { label: Date / Order, name: date, widget: date }
+      - { label: ModifyDate / Order, name: modifydate, widget: date }
       - {
           label: Featured Image,
           name: featuredImage,
