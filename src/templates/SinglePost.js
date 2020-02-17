@@ -133,6 +133,7 @@ export const pageQuery = graphql`
         template
         subtitle
         date(formatString: "YYYY/MM/DD")
+        modifydate(formatString: "YYYY/MM/DD")
         categories {
           category
         }
