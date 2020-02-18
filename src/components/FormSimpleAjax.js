@@ -65,7 +65,8 @@ class Form extends React.Component {
           className="Form"
           name={name}
           action={action}
-          data-netlify=""
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           netlify-recaptcha=""
           onSubmit={this.handleSubmit}
         >
