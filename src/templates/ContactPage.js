@@ -27,7 +27,7 @@ export const ContactPageTemplate = ({
       backgroundImage={featuredImage}
     />
     <section className="section Contact--Section1">
-      <div className="container Contact--Section1--Container">
+      <div className="">
         {/* <div>
           <Content source={body} />
           <div className="Contact--Details">
@@ -56,7 +56,7 @@ export const ContactPageTemplate = ({
           </div>
         </div> */}
 
-        <div>
+        <div class="Container">
           <FormSimpleAjax name="Simple Form Ajax" />
         </div>
       </div>

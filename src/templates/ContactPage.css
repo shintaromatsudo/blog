@@ -36,3 +36,9 @@
     width: calc(50% - 2rem);
   }
 }
+
+.Container {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
