@@ -28,7 +28,7 @@ export const ContactPageTemplate = ({
     />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <div>
+        {/* <div>
           <Content source={body} />
           <div className="Contact--Details">
             {address && (
@@ -54,7 +54,7 @@ export const ContactPageTemplate = ({
               </a>
             )}
           </div>
-        </div>
+        </div> */}
 
         <div>
           <FormSimpleAjax name="Simple Form Ajax" />
@@ -62,7 +62,7 @@ export const ContactPageTemplate = ({
       </div>
     </section>
 
-    <GoogleMap locations={locations} />
+    {/* <GoogleMap locations={locations} /> */}
   </main>
 )
 
