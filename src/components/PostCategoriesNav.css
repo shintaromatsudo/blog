@@ -25,9 +25,9 @@
   outline: none;
 }
 
-.PostCategoriesNav input[type='text']::placeholder {
+/* .PostCategoriesNav input[type='text']::placeholder {
   color: black;
-}
+} */
 
 @media (max-width: 600px) {
   .PostCategoriesNav input[type='text'] {
