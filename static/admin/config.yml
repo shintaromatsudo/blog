@@ -9,7 +9,7 @@ media_library:
   config:
     publicKey: e60db7c15c77f66de4ed
     multiple: false
-    tabs: 'file camera url facebook gdrive'
+    tabs: 'file camera'
     effects: 'crop,rotate,enhance,grayscale'
     imageShrink: '2000x2000'
     previewStep: true
