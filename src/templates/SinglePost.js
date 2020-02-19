@@ -43,7 +43,7 @@ export const SinglePostTemplate = ({
                 itemProp="dateUpdated modidate dateModified"
                 date={modifydate}
               >
-                {modifydate}
+                {modifydate !== "Invalid date" ? modifydate : ''}
               </time>
             )}
             {categories && (
