@@ -5,7 +5,7 @@ backend:
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
-  name: misarablog
+  name: uploadcare
   config:
     publicKey: e60db7c15c77f66de4ed
     multiple: false
