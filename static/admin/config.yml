@@ -8,19 +8,6 @@ backend:
 media_folder: images # 画像ファイルの格納場所を指定
 public_folder: images #公開する際の画像フォルダのパスを指定
 
-# display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
-# media_library:
-#   name: uploadcare
-#   config:
-#     publicKey: e60db7c15c77f66de4ed
-#     multiple: false
-#     tabs: 'file camera'
-#     effects: 'crop,rotate,enhance,grayscale'
-#     imageShrink: '2000x2000'
-#     previewStep: true
-#     clearable: true
-
-
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
     label: 'Page'
