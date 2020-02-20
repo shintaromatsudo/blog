@@ -3,13 +3,10 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-locale: 'ja' #メッセージを日本語化
+# locale: 'ja' #メッセージを日本語化
 
 media_folder: static/images # 画像ファイルの格納場所を指定
 public_folder: public/images #公開する際の画像フォルダのパスを指定
-
-# media_folder: ".vuepress/public/media" 
-# public_folder : "/media" 
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 # media_library:
