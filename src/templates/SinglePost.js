@@ -12,6 +12,7 @@ export const SinglePostTemplate = ({
   date,
   modifydate,
   body,
+  catlink,
   nextPostURL,
   prevPostURL,
   categories = []
@@ -50,14 +51,16 @@ export const SinglePostTemplate = ({
               <Fragment>
                 <span>|</span>
                 {categories.map((cat, index) => (
-                  <span
-                    key={cat.category}
-                    className="SinglePost--Meta--Category"
-                  >
-                    {cat.category}
-                    {/* Add a comma on all but last category */}
-                    {index !== categories.length - 1 ? ',' : ''}
-                  </span>
+                  <Link to={catlink}>
+                    <span
+                      key={cat.category}
+                      className="SinglePost--Meta--Category"
+                    >
+                      {cat.category}
+                      {/* Add a comma on all but last category */}
+                      {index !== categories.length - 1 ? ',' : ''}
+                    </span>
+                  </Link>
                 ))}
               </Fragment>
             )}
@@ -100,6 +103,24 @@ export const SinglePostTemplate = ({
 // Export Default SinglePost for front-end
 const SinglePost = ({ data: { post, allPosts } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+  const subNav = {
+    posts: allPosts.hasOwnProperty('edges')
+      ? allPosts.edges.map(post => {
+        if(post.node.fields.contentType === 'postCategories') {
+          return { ...post.node.fields, ...post.node.frontmatter }
+        }
+        })
+      : false
+  }
+  let catlink 
+  for (let i = 0; i < subNav.posts.length; i++) {
+    if (subNav.posts[i] != undefined && post.frontmatter.categories != null) {
+      if (subNav.posts[i].title == post.frontmatter.categories[0].category) {
+        catlink = subNav.posts[i].slug
+      }
+    }
+  }
+  
   return (
     <Layout
       meta={post.frontmatter.meta || false}
@@ -109,6 +130,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
         {...post}
         {...post.frontmatter}
         body={post.html}
+        catlink={catlink}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -141,12 +163,18 @@ export const pageQuery = graphql`
     }
 
     allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
         node {
           id
+          fields {
+            contentType
+            slug
+          }
+          frontmatter {
+            title
+          }
         }
         next {
           fields {
