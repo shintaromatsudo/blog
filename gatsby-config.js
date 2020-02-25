@@ -13,7 +13,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         /*id: 'GTM-add_your_tag_here',*/
-        id: '',
+        id: 'GTM-TQ9NSWQ',
         includeInDevelopment: false
       }
     },
@@ -130,6 +130,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
+        output: `/sitemap.xml`,
         modulePath: `${__dirname}/src/cms/cms.js`,
         stylesPath: `${__dirname}/src/cms/admin.css`,
         enableIdentityWidget: true
