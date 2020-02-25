@@ -114,8 +114,8 @@ const SinglePost = ({ data: { post, allPosts } }) => {
   }
   let catlink 
   for (let i = 0; i < subNav.posts.length; i++) {
-    if (subNav.posts[i] != undefined && post.frontmatter.categories != null) {
-      if (subNav.posts[i].title == post.frontmatter.categories[0].category) {
+    if (subNav.posts[i] !== undefined && post.frontmatter.categories !== null) {
+      if (subNav.posts[i].title === post.frontmatter.categories[0].category) {
         catlink = subNav.posts[i].slug
       }
     }
