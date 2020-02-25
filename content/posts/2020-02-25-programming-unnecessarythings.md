@@ -7,5 +7,8 @@ modifydate: ''
 excerpt: プログラマー転職に不必要なもの
 categories:
   - category: PROGRAMMING
+meta:
+  description: プログラマー転職に不必要なもの
+  title: プログラマー転職に不必要なもの
 ---
 プログラマー転職に不必要なもの
