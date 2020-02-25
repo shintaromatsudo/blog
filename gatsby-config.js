@@ -31,11 +31,11 @@ module.exports = {
             // Add runtime caching of various other page resources
             urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
             handler: `staleWhileRevalidate`
-          },
-          {
-            // uploadcare
-            urlPattern: /^https:\/\/ucarecdn.com\/[-a-zA-Z0-9@:%_\+.~#?&//=]*?\/10x\//,
-            handler: `staleWhileRevalidate`
+          // },
+          // {
+          //   // uploadcare
+          //   urlPattern: /^https:\/\/ucarecdn.com\/[-a-zA-Z0-9@:%_\+.~#?&//=]*?\/10x\//,
+          //   handler: `staleWhileRevalidate`
           }
         ],
         skipWaiting: true,
