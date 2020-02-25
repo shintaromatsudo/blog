@@ -1,9 +1,9 @@
 ---
 template: SinglePost
-title: whatis-frontend-engineer
+title: フロントエンドエンジニアとは
 status: Published
 date: 2020-02-25T06:40:03.323Z
-modifydate: 2020-02-25T06:40:03.470Z
+modifydate: ''
 excerpt: フロントエンドエンジニアとは
 meta:
   title: フロントエンドエンジニアとは
