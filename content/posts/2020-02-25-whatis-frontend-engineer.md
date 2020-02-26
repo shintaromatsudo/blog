@@ -19,15 +19,15 @@ meta:
 
 この記事を読めばフロントエンドエンジニアとは何かということがスッキリ理解できます。
 
-<ul style="background-color: #f8f9ff; border: solid 1px #4865b2;">
+<ul style="background-color: #f8f9ff; border: solid 1px #4865b2; padding: 40px;">
 目次
-<li><a href="#1">フロントエンドとは</a></li>
-<li><a href="#2">フロントエンドエンジニアとは</a></li>
-<li><a href="#3">マークアップエンジニア、コーダーとの違い</a></li>
-<li><a href="#4">フロントエンドエンジニアの仕事内容</a></li>
-<li><a href="#5">フロントエンドエンジニアの年収</a></li>
-<li><a href="#6">フロントエンドエンジニアに必要な技術、スキル</a></li>
-<li><a href="#7">フロントエンドエンジニアまとめ</a></li>
+<li style="margin: 10px;"><a href="#1">フロントエンドとは</a></li>
+<li style="margin: 10px;"><a href="#2">フロントエンドエンジニアとは</a></li>
+<li style="margin: 10px;"><a href="#3">マークアップエンジニア、コーダーとの違い</a></li>
+<li style="margin: 10px;"><a href="#4">フロントエンドエンジニアの仕事内容</a></li>
+<li style="margin: 10px;"><a href="#5">フロントエンドエンジニアの年収</a></li>
+<li style="margin: 10px;"><a href="#6">フロントエンドエンジニアに必要な技術、スキル</a></li>
+<li style="margin: 10px;"><a href="#7">フロントエンドエンジニアまとめ</a></li>
 </ul>
 
 <h2 id="1">フロントエンドとは</h2>
