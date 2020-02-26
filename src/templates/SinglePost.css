@@ -28,6 +28,15 @@
   padding: 8rem 5rem 4rem 5rem;
 }
 
+.SinglePost--Content h2 {
+  font-size: 2rem;
+  background: #f7f7f7;
+  border-left: solid #1e50a2 5px;
+  padding: 14px 12px;
+  border-bottom: solid 3px #dadada;
+  clear: both;
+}
+
 @media screen and (max-width: 750px) {
   .SinglePost--Content {
     padding: 4rem 2rem;
@@ -45,8 +54,21 @@
 }
 
 .SinglePost--Title {
+  font-size: 3rem;
   text-align: center;
   line-height: 1.2;
+}
+
+.SinglePost--List {
+  background-color: #f8f9ff;
+  border: solid 1px #1e50a2;
+  border-top: solid 5px #1e50a2;
+  padding: 40px;
+  list-style: decimal;
+}
+
+.SinglePost--List p {
+  color: #1e50a2;
 }
 
 .SinglePost--InnerContent {
