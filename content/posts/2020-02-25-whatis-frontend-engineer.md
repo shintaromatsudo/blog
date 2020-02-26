@@ -5,7 +5,8 @@ status: Published
 date: 2020-02-25T06:40:03.323Z
 modifydate: ''
 featuredImage: /images/software-engineers-vector.png
-excerpt: フロントエンドエンジニアとは
+excerpt: >-
+  ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
 meta:
   title: フロントエンドエンジニアとは
 ---
