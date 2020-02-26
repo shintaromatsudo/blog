@@ -13,13 +13,13 @@
 }
 
 .PageHeader--Title {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 0;
 }
 
 .PageHeader--Subtitle {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 5rem;
 }
 
 .PageHeader .container {
