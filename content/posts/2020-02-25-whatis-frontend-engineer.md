@@ -9,9 +9,9 @@ excerpt: フロントエンドエンジニアとは
 meta:
   title: フロントエンドエンジニアとは
 ---
-![フロントエンドエンジニアになる](/images/software-engineers-vector.png "フロントエンドエンジニアとは")
+![フロントエンドエンジニアになる](/images/software-engineers-vector.png "")
 
-フロントエンドエンジニアとは何か。
+<h2>フロントエンドエンジニアとは何か。</h2>
 
 わかりやすく説明いたします。
 
@@ -19,42 +19,27 @@ meta:
 
 この記事を読めばフロントエンドエンジニアとは何かということがスッキリ理解できます。
 
-<ul style="background-color: #f8f9ff; border: solid 1px #4865b2;">
+<ul style="background-color: #f8f9ff; border: solid 1px #4865b2; padding: 40px;">
 目次
-<li><a href="#1">あああ</a></li>
-<li><a href="#2">あああ</a></li>
-<li><a href="#3">あああ</a></li>
+<li style="margin: 10px;"><a href="#1">フロントエンドとは</a></li>
+<li style="margin: 10px;"><a href="#2">フロントエンドエンジニアとは</a></li>
+<li style="margin: 10px;"><a href="#3">マークアップエンジニア、コーダーとの違い</a></li>
+<li style="margin: 10px;"><a href="#4">フロントエンドエンジニアの仕事内容</a></li>
+<li style="margin: 10px;"><a href="#5">フロントエンドエンジニアの年収</a></li>
+<li style="margin: 10px;"><a href="#6">フロントエンドエンジニアに必要な技術、スキル</a></li>
+<li style="margin: 10px;"><a href="#7">フロントエンドエンジニアまとめ</a></li>
 </ul>
 
-```
-This is placeholder text that our web designers put here to make
+<h2 id="1">フロントエンドとは</h2>
 
-sure words appear properly on your website. This text is going to be
+<h2 id="2">フロントエンドエンジニアとは</h2>
 
- replaced once the website is completed. You are currently reading 
+<h2 id="3">マークアップエンジニア、コーダーとの違い</h2>
 
-text that is written in English, not any other language.
-```
+<h2 id="4">フロントエンドエンジニアの仕事内容</h2>
 
-Be careful not to waste too much time reading placeholder text! This text isn’t going to remain here because it doesn't pertain to the website. This paragraph has been copied from a program that automatically generates paragraphs like this. It is useful for web designers to use placeholder text so they can easily see what different fonts look like on a realistic paragraph.
+<h2 id="5">フロントエンドエンジニアの年収</h2>
 
-# 1
+<h2 id="6">フロントエンドエンジニアに必要な技術、スキル</h2>
 
-Header  {#1}
-
-#### Header1  {#header1}
-
-# Link
-
-* [README](#README)
-* [使い方](#使い方)
-
-## README
-
-README
-
-使い方
-
-`使い方`
-
-<p id="1">aaa</p>
+<h2 id="7">フロントエンドエンジニアまとめ</h2>
