@@ -9,7 +9,7 @@ excerpt: フロントエンドエンジニアとは
 meta:
   title: フロントエンドエンジニアとは
 ---
-![フロントエンドエンジニアになる](/images/software-engineers-vector.png "")
+![フロントエンドエンジニアとは](/images/software-engineers-vector.png)
 
 <h2>フロントエンドエンジニアとは何か。</h2>
 
