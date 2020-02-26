@@ -55,13 +55,20 @@
   background-color: #f8f9ff;
   border-top: solid 5px #1e50a2;
   padding: 40px;
-  list-style: decimal;
   box-shadow: 0 1.5px 2.4px rgba(0, 0, 0, 0.15)
 }
 
 .SinglePost--List p {
   font-size: 2rem;
   color: #1e50a2;
+}
+
+.SinglePost--List ul {
+  list-style: decimal;
+}
+
+.SinglePost--List ul > li {
+  margin: 10px;
 }
 
 .SinglePost--InnerContent {
@@ -80,7 +87,7 @@
 .SinglePost--InnerContent h3 {
   font-size: 1.8rem;
   border-left: solid #1e50a2 5px;
-  padding: 14px 12px;
+  padding: 10px 10px;
 }
 
 @media screen and (max-width: 750px) {

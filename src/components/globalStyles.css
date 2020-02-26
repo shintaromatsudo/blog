@@ -47,7 +47,13 @@ body {
 }
 
 a {
-  color: var(--primary);
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1e50a2;
 }
 
 strong {
