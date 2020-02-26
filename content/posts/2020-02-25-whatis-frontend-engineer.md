@@ -5,8 +5,9 @@ status: Published
 date: 2020-02-25T06:40:03.323Z
 modifydate: ''
 featuredImage: /images/software-engineers-vector.png
-excerpt: >-
-  ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+excerpt: フロントエンドエンジニアとは何か。まず目指す前に目指すものをしっかりわかっといた方がいいです。
+categories:
+  - category: PROGRAMMING
 meta:
   title: フロントエンドエンジニアとは
 ---
