@@ -10,10 +10,6 @@ export default () => (
     </Helmet>
     <section className="">
       <div className="">
-        <h1>404 - Page Not Found</h1>
-        <p>
-          We can't find the page you are looking for!
-        </p>
         <blockquote>
           <p>本文書は、当サイト（misarablog）における個人情報の保護およびその適切な取り扱いについての方針を示したものです。</p>
           <p>&nbsp;</p>
