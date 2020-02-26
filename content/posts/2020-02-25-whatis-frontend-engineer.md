@@ -4,26 +4,26 @@ title: フロントエンドエンジニアとは
 status: Published
 date: 2020-02-25T06:40:03.323Z
 modifydate: ''
+featuredImage: /images/software-engineers-vector.png
 excerpt: フロントエンドエンジニアとは
 meta:
   title: フロントエンドエンジニアとは
 ---
-```
-[あああ](#1)
+![フロントエンドエンジニアになる](/images/software-engineers-vector.png "フロントエンドエンジニアとは")
 
-[いいい](#2)
+フロントエンドエンジニアとは何か。
 
-<a href="#1">あああ</a>
-```
+わかりやすく説明いたします。
 
-[`あああ`](#1)
+私はフロントエンドエンジニアからキャリアを始め、バックエンドエンジニア、機械学習エンジニア、フリーランスでフルスタックエンジニア、ITコンサルタントを経験し、現在は某スタートアップでCTOをしております。
 
-<a href="#1">あああ</a>
+この記事を読めばフロントエンドエンジニアとは何かということがスッキリ理解できます。
 
-<ul style="background-color: #f8f9ff; border: dashed 1px #4865b2;">
+<ul style="background-color: #f8f9ff; border: solid 1px #4865b2;">
+目次
 <li><a href="#1">あああ</a></li>
-<li>い</li>
-<li>う</li>
+<li><a href="#2">あああ</a></li>
+<li><a href="#3">あああ</a></li>
 </ul>
 
 ```
