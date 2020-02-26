@@ -19,7 +19,7 @@ meta:
 
 この記事を読めばフロントエンドエンジニアとは何かということがスッキリ理解できます。
 
-<ul style="background-color: #f8f9ff; border: solid 1px #4865b2; padding: 40px;">
+<ul style="background-color: #f8f9ff; border: solid 1px #4865b2; padding: 40px; list-style: decimal;">
 目次
 <li style="margin: 10px;"><a href="#1">フロントエンドとは</a></li>
 <li style="margin: 10px;"><a href="#2">フロントエンドエンジニアとは</a></li>
