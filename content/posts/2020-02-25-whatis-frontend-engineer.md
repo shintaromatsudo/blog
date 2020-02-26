@@ -19,8 +19,9 @@ meta:
 
 この記事を読めばフロントエンドエンジニアとは何かということがスッキリ理解できます。
 
-<ul style="background-color: #f8f9ff; border: solid 1px #4865b2; padding: 40px; list-style: decimal;">
-目次
+<div class="SinglePost--List">
+<p>目次</p>
+<ul>
 <li style="margin: 10px;"><a href="#1">フロントエンドとは</a></li>
 <li style="margin: 10px;"><a href="#2">フロントエンドエンジニアとは</a></li>
 <li style="margin: 10px;"><a href="#3">マークアップエンジニア、コーダーとの違い</a></li>
@@ -29,6 +30,7 @@ meta:
 <li style="margin: 10px;"><a href="#6">フロントエンドエンジニアに必要な技術、スキル</a></li>
 <li style="margin: 10px;"><a href="#7">フロントエンドエンジニアまとめ</a></li>
 </ul>
+</div>
 
 <h2 id="1">フロントエンドとは</h2>
 
