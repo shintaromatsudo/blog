@@ -1,9 +1,9 @@
-a {
+.SinglePost--List > a {
   text-decoration: none;
   color: black;
 }
 
-a:hover {
+.SinglePost--List > a:hover {
   text-decoration: underline;
   color: #1e50a2;
 }
