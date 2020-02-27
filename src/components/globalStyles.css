@@ -1,5 +1,5 @@
 :root {
-  --primary: #00c2bd;
+  --primary: #1e50a2;
   --secondary: #000;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
@@ -47,13 +47,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #1e50a2;
+  color: var(--primary);
 }
 
 strong {

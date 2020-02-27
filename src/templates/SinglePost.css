@@ -1,3 +1,13 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1e50a2;
+}
+
 .SinglePost {
   background: var(--lightGrey);
 }
