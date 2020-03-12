@@ -40,7 +40,7 @@ export class Navigation extends Component {
   render() {
     const { active } = this.state,
       { subNav } = this.props,
-      shareUrl = this.props.location.href,
+      { shareUrl } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
         <Link
           to={to}
@@ -53,7 +53,6 @@ export class Navigation extends Component {
           {children}
         </Link>
       )
-    console.log(shareUrl)
 
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
@@ -100,6 +99,6 @@ export class Navigation extends Component {
   }
 }
 
-export default ({ subNav }) => (
-  <Location>{route => <Navigation subNav={subNav} {...route} />}</Location>
+export default ({ subNav, shareUrl }) => (
+  <Location>{route => <Navigation subNav={subNav} shareUrl={shareUrl} {...route} />}</Location>
 )

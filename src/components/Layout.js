@@ -10,6 +10,7 @@ import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
 
 export default ({ children, meta, title, shareUrl }) => {
+  console.log(shareUrl)
   return (
     <StaticQuery
       query={graphql`
