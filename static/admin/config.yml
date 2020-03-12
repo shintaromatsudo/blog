@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 locale: 'ja' #メッセージを日本語化
 

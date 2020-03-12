@@ -6,7 +6,7 @@
   --darkGrey: #272727;
   --danger: #ff3d3d;
   --font-primary: 'Open Sans', sans-serif;
-  --font-system:  Roboto, 'Noto Sans JP', system-ui; /* postcssPresetEnv */
+  --font-system:  Noto, 'Hiragino Sans', Helvetica, Arial, sans-serif;
   --borderRadius: 3px;
 }
 
