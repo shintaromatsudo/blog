@@ -34,24 +34,26 @@ export const SinglePostTemplate = ({
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
+      <div className="SinglePost--Actions">
+        <ul>
+          <li><FacebookShareButton url={shareUrl} className="mr-2">
+            <FacebookIcon size={40} round />
+          </FacebookShareButton></li>
+          <li><TwitterShareButton url={shareUrl} className="mr-2">
+            <TwitterIcon size={40} round />
+          </TwitterShareButton></li>
+          <li><LineShareButton url={shareUrl} className="mr-2">
+            <LineIcon size={40} round />
+          </LineShareButton></li>
+          <li><PocketShareButton url={shareUrl} className="mr-2">
+            <PocketIcon size={40} round />
+          </PocketShareButton></li>
+        </ul>
+      </div>
       <div className="container skinny">
         <Link className="SinglePost--BackButton" to="/">
           <ChevronLeft /> BACK
         </Link>
-        <div className="SinglePost--Actions">
-          <FacebookShareButton url={shareUrl} className="mr-2">
-            <FacebookIcon size={40} round />
-          </FacebookShareButton>
-          <TwitterShareButton url={shareUrl} className="mr-2">
-            <TwitterIcon size={40} round />
-          </TwitterShareButton>
-          <LineShareButton url={shareUrl} className="mr-2">
-            <LineIcon size={40} round />
-          </LineShareButton>
-          <PocketShareButton url={shareUrl} className="mr-2">
-            <PocketIcon size={40} round />
-          </PocketShareButton>
-        </div>
         <div className="SinglePost--Content relative">
           <div className="SinglePost--Meta">
             {date && (
@@ -145,6 +147,9 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       }
     }
   }
+
+  const shareUrl = "https://misara-2020.netlify.com" + thisEdge.node.fields.slug
+  console.log(shareUrl)
   
   return (
     <Layout
@@ -154,7 +159,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
-        shareUrl={_get(thisEdge, 'node.fields.slug')}
+        shareUrl={shareUrl}
         body={post.html}
         catlink={catlink}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}

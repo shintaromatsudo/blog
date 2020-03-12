@@ -104,6 +104,11 @@ blockquote {
   border-left: 2px solid var(--primary);
 }
 
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
 /* Utility Classes */
 .light {
   background-color: var(--lightGrey);
@@ -189,7 +194,7 @@ blockquote {
   margin: 0 auto;
 }
 .container.skinny {
-  max-width: 888px;
+  max-width: 850px;
 }
 .container.skinnier {
   max-width: 555px;

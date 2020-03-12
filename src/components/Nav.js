@@ -3,6 +3,16 @@ import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  LineShareButton,
+  LineIcon,
+  PocketShareButton,
+  PocketIcon,
+} from 'react-share';
 
 import './Nav.css'
 
@@ -13,8 +23,9 @@ export class Navigation extends Component {
     currentPath: false
   }
 
-  componentDidMount = () =>
+  componentDidMount = () => {
     this.setState({ currentPath: this.props.location.pathname })
+  }
 
   handleMenuToggle = () => this.setState({ active: !this.state.active })
 
@@ -27,6 +38,7 @@ export class Navigation extends Component {
     })
 
   render() {
+    const shareUrl = window.location.href
     const { active } = this.state,
       { subNav } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
@@ -58,10 +70,22 @@ export class Navigation extends Component {
                   {link.title}
                 </NavLink>
               ))}
+              <NavLink to="/contact/" className="Nav--Contact">Contact</NavLink>
             </div>
-            <div className="Nav--Links">
-              <NavLink to="/contact/">Contact</NavLink>
-            </div>
+          </div>
+          <div className="Nav--Actions">
+            <FacebookShareButton url={shareUrl} className="Nav--shareButton">
+              <FacebookIcon size={40} round />
+            </FacebookShareButton>
+            <TwitterShareButton url={shareUrl} className="Nav--shareButton">
+              <TwitterIcon size={40} round />
+            </TwitterShareButton>
+            <LineShareButton url={shareUrl} className="Nav--shareButton">
+              <LineIcon size={40} round />
+            </LineShareButton>
+            <PocketShareButton url={shareUrl} className="Nav--shareButton">
+              <PocketIcon size={40} round />
+            </PocketShareButton>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

@@ -74,10 +74,6 @@
   color: #1e50a2;
 }
 
-.SinglePost--List ul {
-  list-style: none;
-}
-
 .SinglePost--List ul > li {
   margin: 10px;
 }
@@ -134,8 +130,16 @@
   margin-left: auto;
 }
 
-.SinglePost--Actions {
-  position: absolute;
-  top: 0;
-  height: 100%;
+@media screen and (max-width: 1024px) {
+  .SinglePost--Actions {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .SinglePost--Actions {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    height: 100%;
+  }
 }
