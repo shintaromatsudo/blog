@@ -145,6 +145,7 @@
 @media (max-width: 1024px) {
   .Nav--Container {
     display: flex;
+    justify-content: space-between;
   }
 
   .Nav--Space {
@@ -153,11 +154,12 @@
 
   .Nav--MenuButton {
     display: block !important;
-    margin-left: auto;
+    margin-left: 0;
     z-index: 1;
   }
   .Nav .Logo {
     z-index: 1;
+    margin-right: 0;
   }
 
   .Nav--Links {

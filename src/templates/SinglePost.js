@@ -2,10 +2,6 @@ import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 import { ChevronLeft } from 'react-feather'
-
-import Content from '../components/Content'
-import Layout from '../components/Layout'
-import './SinglePost.css'
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -16,6 +12,11 @@ import {
   PocketShareButton,
   PocketIcon,
 } from 'react-share';
+
+import Content from '../components/Content'
+import Layout from '../components/Layout'
+import Breadcrumb from '../components/Breadcrumb'
+import './SinglePost.css'
 
 export const SinglePostTemplate = ({
   title,
@@ -51,9 +52,12 @@ export const SinglePostTemplate = ({
         </ul>
       </div>
       <div className="container skinny">
-        <Link className="SinglePost--BackButton" to="/">
-          <ChevronLeft /> BACK
-        </Link>
+        <Breadcrumb breadcrumbs={[
+              { to: '/', label: 'Home' },
+              { to: `/post-categories/${categories[0].category}`, label: `${categories[0].category}` },
+              { to: `${shareUrl}`, label: title, active: true },
+            ]}
+            />
         <div className="SinglePost--Content relative">
           <div className="SinglePost--Meta">
             {date && (
@@ -71,7 +75,7 @@ export const SinglePostTemplate = ({
                 itemProp="dateUpdated modidate dateModified"
                 date={modifydate}
               >
-                {modifydate !== "Invalid date" ? modifydate : ''}
+                {modifydate !== "Invalid date" ? '更新日 ' + modifydate : ''}
               </time>
             )}
             {categories && (
@@ -102,6 +106,20 @@ export const SinglePostTemplate = ({
           <div className="SinglePost--InnerContent">
             <Content source={body} />
           </div>
+
+          <p style={{marginBottom: '10px'}}>
+            <a href="https://misara-2020.netlify.com/posts/Python入門ガイド完全版【基礎知識・学習法・コードサンプル・転職・案件獲得】">
+              <span style={{
+                fontSize: "14px",
+                color: "#fff",
+                marginRight: "10px",
+                backgroundColor: "#1e50a2",
+                borderRadius: "2px",
+                padding: "8px 8px 7px",
+              }}>人気記事</span>
+              Python入門ガイド完全版【基礎知識・学習法・コードサンプル・転職・案件獲得】
+            </a>
+          </p>
 
           <div className="SinglePost--Pagination">
             {prevPostURL && (
@@ -147,6 +165,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       }
     }
   }
+  console.log(post.frontmatter.categories)
 
   const shareUrl = "https://misara-2020.netlify.com" + thisEdge.node.fields.slug
   

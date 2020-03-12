@@ -74,18 +74,20 @@ export class Navigation extends Component {
             </div>
           </div>
           <div className="Nav--Actions">
-            <FacebookShareButton url={shareUrl} className="Nav--shareButton">
-              <FacebookIcon size={40} round />
-            </FacebookShareButton>
-            <TwitterShareButton url={shareUrl} className="Nav--shareButton">
-              <TwitterIcon size={40} round />
-            </TwitterShareButton>
-            <LineShareButton url={shareUrl} className="Nav--shareButton">
-              <LineIcon size={40} round />
-            </LineShareButton>
-            <PocketShareButton url={shareUrl} className="Nav--shareButton">
-              <PocketIcon size={40} round />
-            </PocketShareButton>
+            <div>
+              <FacebookShareButton url={shareUrl} className="Nav--shareButton">
+                <FacebookIcon size={40} round />
+              </FacebookShareButton>
+              <TwitterShareButton url={shareUrl} className="Nav--shareButton">
+                <TwitterIcon size={40} round />
+              </TwitterShareButton>
+              <LineShareButton url={shareUrl} className="Nav--shareButton">
+                <LineIcon size={40} round />
+              </LineShareButton>
+              <PocketShareButton url={shareUrl} className="Nav--shareButton">
+                <PocketIcon size={40} round />
+              </PocketShareButton>
+            </div>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
