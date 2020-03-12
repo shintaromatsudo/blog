@@ -133,3 +133,9 @@
 .SinglePost--Pagination--Link.next {
   margin-left: auto;
 }
+
+.SinglePost--Actions {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}

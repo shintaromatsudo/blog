@@ -6,6 +6,18 @@ import { ChevronLeft } from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LineShareButton,
+  LineIcon,
+  PocketShareButton,
+  PocketIcon,
+} from 'react-share';
 
 export const SinglePostTemplate = ({
   title,
@@ -15,7 +27,8 @@ export const SinglePostTemplate = ({
   catlink,
   nextPostURL,
   prevPostURL,
-  categories = []
+  categories = [],
+  shareUrl
 }) => (
   <main>
     <article
@@ -27,6 +40,23 @@ export const SinglePostTemplate = ({
         <Link className="SinglePost--BackButton" to="/">
           <ChevronLeft /> BACK
         </Link>
+        <div className="SinglePost--Actions">
+          <FacebookShareButton url={shareUrl} className="mr-2">
+            <FacebookIcon size={40} round />
+          </FacebookShareButton>
+          <TwitterShareButton url={shareUrl} className="mr-2">
+            <TwitterIcon size={40} round />
+          </TwitterShareButton>
+          <WhatsappShareButton url={shareUrl} className="mr-2">
+            <WhatsappIcon size={40} round />
+          </WhatsappShareButton>
+          <LineShareButton url={shareUrl} className="mr-2">
+            <LineIcon size={40} round />
+          </LineShareButton>
+          <PocketShareButton url={shareUrl} className="mr-2">
+            <PocketIcon size={40} round />
+          </PocketShareButton>
+        </div>
         <div className="SinglePost--Content relative">
           <div className="SinglePost--Meta">
             {date && (
@@ -120,6 +150,8 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       }
     }
   }
+
+  const shareUrl = location.href
   
   return (
     <Layout
@@ -129,6 +161,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
+        shareUrl={shareUrl}
         body={post.html}
         catlink={catlink}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
