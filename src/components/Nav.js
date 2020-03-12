@@ -38,9 +38,9 @@ export class Navigation extends Component {
     })
 
   render() {
-    const shareUrl = window.location.href
     const { active } = this.state,
       { subNav } = this.props,
+      shareUrl = this.props.location.href,
       NavLink = ({ to, className, children, ...props }) => (
         <Link
           to={to}
@@ -53,6 +53,7 @@ export class Navigation extends Component {
           {children}
         </Link>
       )
+    console.log(shareUrl)
 
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>

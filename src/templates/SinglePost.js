@@ -149,12 +149,12 @@ const SinglePost = ({ data: { post, allPosts } }) => {
   }
 
   const shareUrl = "https://misara-2020.netlify.com" + thisEdge.node.fields.slug
-  console.log(shareUrl)
   
   return (
     <Layout
       meta={post.frontmatter.meta || false}
       title={post.frontmatter.title || false}
+      shareUrl={shareUrl}
     >
       <SinglePostTemplate
         {...post}

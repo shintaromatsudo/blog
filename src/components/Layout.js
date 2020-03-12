@@ -4,11 +4,12 @@ import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
 import Footer from './Footer'
+// import PageTopButton from './PageTopButton'
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
 
-export default ({ children, meta, title }) => {
+export default ({ children, meta, title, shareUrl }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -73,9 +74,11 @@ export default ({ children, meta, title }) => {
               {...data.settingsYaml}
             />
 
-            <Nav subNav={subNav} />
+            <Nav subNav={subNav} shareUrl={shareUrl} />
 
             <Fragment>{children}</Fragment>
+
+            {/* <PageTopButton /> */}
 
             <Footer />
           </Fragment>
