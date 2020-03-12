@@ -11,8 +11,6 @@ import {
   FacebookIcon,
   TwitterShareButton,
   TwitterIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
   LineShareButton,
   LineIcon,
   PocketShareButton,
@@ -47,9 +45,6 @@ export const SinglePostTemplate = ({
           <TwitterShareButton url={shareUrl} className="mr-2">
             <TwitterIcon size={40} round />
           </TwitterShareButton>
-          <WhatsappShareButton url={shareUrl} className="mr-2">
-            <WhatsappIcon size={40} round />
-          </WhatsappShareButton>
           <LineShareButton url={shareUrl} className="mr-2">
             <LineIcon size={40} round />
           </LineShareButton>
@@ -150,8 +145,6 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       }
     }
   }
-
-  const shareUrl = location.href
   
   return (
     <Layout
@@ -161,7 +154,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
-        shareUrl={shareUrl}
+        shareUrl={_get(thisEdge, 'node.fields.slug')}
         body={post.html}
         catlink={catlink}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
