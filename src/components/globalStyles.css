@@ -41,8 +41,8 @@ body {
   color: var(--secondary);
   font-size: 1.5em;
   font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.6;
+  letter-spacing: 0.02em;
+  line-height: 2;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -71,17 +71,18 @@ h6 {
 
 pre {
   background: var(--lightGrey);
-  line-height: 1.45;
-  font-size: 85%;
+  line-height: 2;
+  /* font-size: 85%; */
   border-radius: 3px;
-  padding: 16px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 code {
-  font-size: 85%;
+  /* font-size: 85%; */
   padding: 0.15em 0;
-  background: var(--lightGrey);
-  border-radius: 3px;
+  /* background: var(--lightGrey); */
+  /* border-radius: 3px; */
 }
 code:before,
 code:after {

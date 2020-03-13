@@ -165,7 +165,6 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       }
     }
   }
-  console.log(post.frontmatter.categories)
 
   const shareUrl = "https://misara-2020.netlify.com" + thisEdge.node.fields.slug
   
