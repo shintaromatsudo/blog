@@ -49,13 +49,6 @@ p {
   padding: 8rem 5rem 4rem 5rem;
 }
 
-
-@media screen and (max-width: 750px) {
-  .SinglePost--Content {
-    padding: 4rem 2rem;
-  }
-}
-
 .SinglePost--Meta {
   font-size: 1rem;
   margin: 0 0 2rem 0;
@@ -130,6 +123,40 @@ p {
 }
 
 @media screen and (max-width: 750px) {
+  .SinglePost--Content {
+    padding: 4rem 0;
+  }
+  .SinglePost--Title {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+  .SinglePost--List {
+    padding-left: 0;
+  }
+  .SinglePost--List p {
+    padding-left: 40px;
+  }
+  .SinglePost--List ul {
+    margin-left: -20px;
+  }
+  .SinglePost--Point {
+    font-size: 1.5rem;
+  }
+  .SinglePost--List {
+    margin: 20px 10px 5rem;
+  }
+  .SinglePost--List2 {
+    margin: 20px 10px 5rem;
+  }
+  .SinglePost--InnerContent h2 {
+    font-size: 2rem;
+  }
+  .SinglePost--InnerContent h3 {
+    font-size: 1.5rem;
+  }
   .SinglePost--InnerContent {
     padding: 0;
   }
